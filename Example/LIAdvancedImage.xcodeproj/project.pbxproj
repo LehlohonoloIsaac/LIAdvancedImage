@@ -46,7 +46,7 @@
 		B6C278510EDF98EFA0544555 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B6E9F5AACA950C798153F6AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C82E976F98138171A31F11D1 /* Pods-LIAdvancedImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIAdvancedImage_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LIAdvancedImage_Tests/Pods-LIAdvancedImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E5F83238D10138B345008EF2 /* LIAdvancedImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LIAdvancedImage.podspec; path = ../LIAdvancedImage.podspec; sourceTree = "<group>"; };
+		E5F83238D10138B345008EF2 /* LIAdvancedImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LIAdvancedImage.podspec; path = ../LIAdvancedImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +516,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LIAdvancedImage_Example.app/LIAdvancedImage_Example";
 			};
 			name = Debug;
 		};
@@ -533,6 +534,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LIAdvancedImage_Example.app/LIAdvancedImage_Example";
 			};
 			name = Release;
 		};

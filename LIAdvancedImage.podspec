@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LIAdvancedImage'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LIAdvancedImage.'
+  s.summary          = 'A convenience Cocoapod that extends the UIImageView swift class.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,25 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+"LIAdvancedImage is a Cocoapod created to help in creating circular imageViews.This cocoapods extension the UIImageView class of Swift."
                        DESC
 
-  s.homepage         = 'https://github.com/lehlohonoloisaac25@gmail.com/LIAdvancedImage'
+  s.homepage         = 'https://github.com/VaalSquared/LIAdvancedImage'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lehlohonoloisaac25@gmail.com' => 'lehlohonoloisaac25@gmail.com' }
-  s.source           = { :git => 'https://github.com/lehlohonoloisaac25@gmail.com/LIAdvancedImage.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/VaalSquared/LIAdvancedImage.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LIAdvancedImage/Classes/**/*'
+  s.source_files = 'LIAdvancedImage/Classes/*.swift'
   
   # s.resource_bundles = {
   #   'LIAdvancedImage' => ['LIAdvancedImage/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

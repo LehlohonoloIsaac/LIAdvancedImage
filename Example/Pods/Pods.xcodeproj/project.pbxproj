@@ -13,8 +13,8 @@
 		7B430BD5D60F728D4FF049360AAF52FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9A4F709A65DA343BA983097ADB36DCB1 /* Pods-LIAdvancedImage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE448D7F6F335B67ED6483AEBF506C /* Pods-LIAdvancedImage_Tests-dummy.m */; };
 		AF79C8209D5CAE8E000158FD8295329C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B1C2871D73C4BEDE1E0CC7C09B6D022A /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7888D9D09899F53673162AED0BCB3C /* ReplaceMe.swift */; };
 		BA131040CCB92EB0A4BABB2000A679EE /* Pods-LIAdvancedImage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7843D8E81412A1869E182FC430158BB /* Pods-LIAdvancedImage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC07E55220D97E24001CC13C /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07E55120D97E24001CC13C /* UIImageViewExtensions.swift */; };
 		CE70A35FDF10BB7157B8CA758466F245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F7DD2BA0B2074026D12BA75EF030BAA5 /* LIAdvancedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F15118049C62D698835DF37A2D72AACC /* LIAdvancedImage-dummy.m */; };
 /* End PBXBuildFile section */
@@ -47,7 +47,6 @@
 		493688499287122D97729B4F16F57FA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4BA21F6523976B115BE7823316DF4DD0 /* Pods-LIAdvancedImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LIAdvancedImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4CD639860EEB4FFA0B2811FC2713C91B /* Pods-LIAdvancedImage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LIAdvancedImage_Example-dummy.m"; sourceTree = "<group>"; };
-		4D7888D9D09899F53673162AED0BCB3C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LIAdvancedImage/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		54151153FF81873FFC94601B1C56709E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58C22BDB6F54AC27D90D0361CA0F41DA /* Pods-LIAdvancedImage_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LIAdvancedImage_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C0E6CF6DF477ED737740FA251905DB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		9E50D74D4C87F8C118D1251B2FA4A942 /* Pods-LIAdvancedImage_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LIAdvancedImage_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A4A6A2E8D20334667E91D242325967A6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B6E500B526CE9F864E7DF3DDECC70D06 /* Pods-LIAdvancedImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LIAdvancedImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BC07E55120D97E24001CC13C /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewExtensions.swift; path = LIAdvancedImage/Classes/UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		BE25A166056AA52FEB95206E35FA798E /* Pods-LIAdvancedImage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LIAdvancedImage_Example-resources.sh"; sourceTree = "<group>"; };
 		BF033A5FBF8C34E0649B746C22175E99 /* LIAdvancedImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LIAdvancedImage.modulemap; sourceTree = "<group>"; };
 		BF86F02EB5EEFCBCB972D6F5D613DF14 /* Pods-LIAdvancedImage_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LIAdvancedImage_Tests.modulemap"; sourceTree = "<group>"; };
@@ -156,9 +156,9 @@
 		1AD00E780DA991BBEE399481D98BA50E /* LIAdvancedImage */ = {
 			isa = PBXGroup;
 			children = (
-				4D7888D9D09899F53673162AED0BCB3C /* ReplaceMe.swift */,
 				AAC059A1B953468728779317F77A39FE /* Pod */,
 				0062EAD045C375D73A993AC566BB79EE /* Support Files */,
+				BC07E55120D97E24001CC13C /* UIImageViewExtensions.swift */,
 			);
 			name = LIAdvancedImage;
 			path = ../..;
@@ -318,6 +318,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					F6FEEC166C84BCD46256313407120374 = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -351,8 +356,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC07E55220D97E24001CC13C /* UIImageViewExtensions.swift in Sources */,
 				F7DD2BA0B2074026D12BA75EF030BAA5 /* LIAdvancedImage-dummy.m in Sources */,
-				B1C2871D73C4BEDE1E0CC7C09B6D022A /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E7574E22D4AA7F435DDA1C54E39B744 /* LIAdvancedImage.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -585,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E7574E22D4AA7F435DDA1C54E39B744 /* LIAdvancedImage.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
