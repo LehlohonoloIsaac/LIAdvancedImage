@@ -1,0 +1,16 @@
+PODS:
+  - LIAdvancedImage (0.1.0)
+
+DEPENDENCIES:
+  - LIAdvancedImage (from `../`)
+
+EXTERNAL SOURCES:
+  LIAdvancedImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LIAdvancedImage: 669505847cb2b8c03d7006f4afd11d3caf6535ee
+
+PODFILE CHECKSUM: 73ef5a846c4900a12b9c0fb1510e0a480592c65e
+
+COCOAPODS: 1.5.3
