@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LIAdvancedImage_Example' do
+  pod 'LIAdvancedImage', :path => '../'
+
+  target 'LIAdvancedImage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
